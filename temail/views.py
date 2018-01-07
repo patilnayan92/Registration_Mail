@@ -53,5 +53,5 @@ def activate(request, uidb64, token):
     else:
         return HttpResponse('Activation link is invalid!')
 
-def student(request):
-    return render(request, 'login/student.html')
+def login(request):
+    return render(request, 'login.html')
