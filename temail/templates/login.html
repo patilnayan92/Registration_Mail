@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title> Login Page </title>
+</head>
+<body>
+    <h3>Thank you for your email confirmation. Now you can login your account.<h3>
+    <h2>Login </h2>
+    <form action="student.html" method="post">
+      {% csrf_token %}
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <button type="click">Logis</button>
+    </form>
+</body>
+</html>

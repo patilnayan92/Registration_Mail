@@ -1,0 +1,13 @@
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h2>Online Test</h2>
+
+
+{% endblock %}
+{% if user %}
+  {% block info %}
+  <h5>{{Logged in as {{user.username}}</h5>
+  {% endblock %}
+{% endif %}
